@@ -9,7 +9,7 @@ new MobileMenu();
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
-
+console.log('Test');
 document.querySelectorAll(".open-modal").forEach(el => {
 	el.addEventListener("click", e => {
 		e.preventDefault();
