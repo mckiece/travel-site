@@ -23,15 +23,19 @@
 		position: absolute;
 		top: 0;
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translateX(-50%) scale(.8);
+		transform-origin: 50% 0;
 		background-color: $mainBlue;
-		padding: 13px 29px;
+		padding: 25px 36px;
 
 		@mixin atMedium {
 			left: auto;
-			transformX: 0;
-			padding: 25px 36px;
+			transform: translateX(0);
 		}
+	}
+
+	&__logo__graphic {
+		text-indent: -9999px;
 	}
 
 	&__menu-icon {
@@ -39,8 +43,8 @@
 		height: 19px;
 		position: absolute;
 		z-index: 10;
-		top: 5px;
-		right: 5px;
+		top: 10px;
+		right: 10px;
 
 		&::before {
 			content: "";
